@@ -1,7 +1,7 @@
 /*N107Дано целое число m > 1. Получить наибольшее целое k, при
 котором 4^k <m*/
 const FindK = (function() {
-  var k=0,m,n=1;
+  let k=0,m,n=1;
 
     return { 
         defineM(num) {

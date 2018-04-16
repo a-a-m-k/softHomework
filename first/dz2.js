@@ -7,17 +7,17 @@
 б) указать все пары x, y таких натуральных чисел, что n = x^2+y^2   x≥ y.*/
 
 
-var findXY=function() {
-   var self = this;
-var first=[],sec=[];
+const findXY=function() {
+   
+let first=[],sec=[];
 
 this.n = 0;
  
 const firstTask =function (){
 
- for (let x = 1; x * x <= self.n; x++){
-  for (let y = 1; y * y <= self.n; y++)
-  {if (x * x + y * y == self.n ) {
+ for (let x = 1; x * x <= this.n; x++){
+  for (let y = 1; y * y <= this.n; y++)
+  {if (x * x + y * y == this.n ) {
               first.push(x,y);
 
               return first;}}}
@@ -29,9 +29,9 @@ const firstTask =function (){
  const secondTask=function(){
   
   
-  for(let x=1; x<self.n; x++){
+  for(let x=1; x<this.n; x++){
     const pow=x*x;
-    const result=self.n - pow;
+    const result=this.n - pow;
     const y= Math.sqrt(result);
 
 if(y===(y ^ 0) && x>y ){
